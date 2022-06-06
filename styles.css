@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-cellphone-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-cellphone-container img {
+    height: 42rem;
+}
+
+.instagram-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    margin: 0;
+    margin-bottom: 1em;
+    width: 10rem;
+}
+
+.login-box{
+    background-color: white;
+    border: 1px solid gray;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    padding: 2rem;
+    padding-inline:5rem;
+    text-align: center;
+}
+
+.login-button{
+    white-space: nowrap;
+    background-color: #0095F6;
+    color: white;
+    padding: 0.55em;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.login-button:hover{
+    background-color: #008eec;
+}
+
+.get-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.apps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-block: 1rem;
+}
+
+.app-button{
+    height: 3rem;
+    width: 10rem;
+    background-size: contain;
+    justify-content: space-around;
+}
+
+.app-button:nth-child(1){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.app-button:nth-child(2){
+    background-image: url('./img/apple-button.png');
+}
+
+blue-text{
+    color: #0095F6;
+    font-weight: bold;
+}
+
+@media (max-width:650px) {
+    .instagram-cellphone-container{
+        display: none;
+    }
+}
+
